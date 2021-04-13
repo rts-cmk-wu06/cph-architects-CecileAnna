@@ -1,0 +1,76 @@
+.Article {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.Article__heading {
+    font-size: 1.8rem;
+    color: var(--variable-off-black-color);
+}
+
+.Article__paragraf {
+    color: var(--variable-off-black-color);
+    line-height: 1.5;
+}
+
+.Article__figure {
+    line-height: 0;
+}
+
+
+/* modifiers */
+
+.Article__heading_big {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+    line-height: 0.95;
+}
+
+
+/* modifiers for cards */
+
+.Article_card {
+    padding: 0.8rem;
+}
+
+.Article__paragraf_card {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    /* modifiers for cards in about*/
+    .Article_card_about {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+    }
+    .Article__paragraf_card_about {
+        width: 40vw;
+        align-self: center;
+        text-align: center;
+    }
+    /* --vertical edition */
+    .Article_card_about_vertical {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Article__paragraf_card_about_vertical {
+        /* align-self: center; */
+        margin-top: 12vh;
+    }
+    /* article modifiers general */
+    .Article_padding_big-screen {
+        padding: 4.5rem 10rem;
+    }
+    .Article_flex_row-reverse {
+        flex-flow: row-reverse nowrap;
+    }
+    #article-img-float {
+        float: right;
+        width: 340px;
+        height: 240px;
+    }
+}

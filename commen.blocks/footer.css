@@ -1,0 +1,46 @@
+.Footer {
+    background-color: var(--variable-off-black-color);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    grid-gap: 0.5rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.Footer__contacts-wrapper {
+    grid-area: 1 / 1 / 2 / 2;
+    line-height: 1.5;
+    margin: 2rem 0;
+    font-size: 1rem;
+    justify-self: center;
+}
+
+.Footer__icons__wrapper {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.Footer__icon {
+    background-color: var(--variable-dark-green-color);
+    padding: 0.5rem;
+    min-width: 2.4rem;
+    min-height: 2.4rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Footer__copyright {
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: center;
+    font-size: 0.8rem;
+}

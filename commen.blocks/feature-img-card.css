@@ -1,0 +1,25 @@
+.Feature-img-card {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Feature-img-card__img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    line-height: 0;
+}
+
+.Feature-img-card__img_article {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    line-height: 0;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .Feature-img-card__img {
+        width: 100%;
+        height: 90vh;
+    }
+}
