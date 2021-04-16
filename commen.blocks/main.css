@@ -1,0 +1,19 @@
+.Main {
+    padding: 1.5rem 1rem;
+}
+
+
+/* modifiers */
+
+.Main_no-padding {
+    padding: 0;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .Main {
+        padding: 4.5rem 10rem;
+    }
+    .Main_no-padding {
+        padding: 0;
+    }
+}

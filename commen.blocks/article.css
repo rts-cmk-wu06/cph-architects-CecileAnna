@@ -40,6 +40,9 @@
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .Article__figure_about {
+        width: 50%;
+    }
     /* modifiers for cards in about*/
     .Article_card_about {
         display: flex;
@@ -47,30 +50,33 @@
         align-content: center;
     }
     .Article__paragraf_card_about {
+        display: flex;
         width: 40vw;
         align-self: center;
         text-align: center;
+    }
+    .Article__paragraf {
+        line-height: 1.8;
     }
     /* --vertical edition */
     .Article_card_about_vertical {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
     }
     .Article__paragraf_card_about_vertical {
-        /* align-self: center; */
-        margin-top: 12vh;
+        align-self: center;
     }
+    .Article
     /* article modifiers general */
     .Article_padding_big-screen {
         padding: 4.5rem 10rem;
-    }
-    .Article_flex_row-reverse {
-        flex-flow: row-reverse nowrap;
     }
     #article-img-float {
         float: right;
         width: 340px;
         height: 240px;
+        padding: 0.45rem 0 0.8rem 1.5rem;
     }
 }

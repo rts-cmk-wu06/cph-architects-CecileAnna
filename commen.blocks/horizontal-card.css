@@ -1,0 +1,28 @@
+.Horizontal-card {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--variable-light-green-color, teal);
+    margin: 1.8rem 0;
+    height: 180px;
+}
+
+.Horizontal-card__img {
+    object-fit: cover;
+    width: 120px;
+    height: 100%;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .Horizontal-card {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: var(--variable-light-green-color, teal);
+        margin: 1.8rem 0;
+        height: 255px;
+    }
+    .Horizontal-card__img {
+        object-fit: cover;
+        width: 185px;
+        height: 100%;
+    }
+}

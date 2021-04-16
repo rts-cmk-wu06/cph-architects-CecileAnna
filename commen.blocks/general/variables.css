@@ -1,0 +1,14 @@
+:root {
+    /* colors */
+    --variable-off-white-color: #FEFEFE;
+    --variable-light-green-color: #BCDFDE;
+    --variable-dark-green-color: #92B8B7;
+    --variable-off-black-color: #707070;
+    /* font families*/
+    --variable-heading-font-family: 'Arial Narrow';
+    --variable-paragraf-font-family: 'Verdana';
+    /* font weight*/
+    --variable-heading-font-weight-bold: 800;
+    /* boxshadow */
+    --variable-box-shadow: 0.3em 0.5em 1em #484848;
+}

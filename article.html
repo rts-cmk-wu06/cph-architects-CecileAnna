@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./commen.blocks/general/general_modifiers.css">
 
     <link rel="stylesheet" href="./commen.blocks/header.css">
+    <link rel="stylesheet" href="./commen.blocks/nav.css">
     <link rel="stylesheet" href="./commen.blocks/main.css">
     <link rel="stylesheet" href="./commen.blocks/article.css">
     <link rel="stylesheet" href="./commen.blocks/horizontal-card.css">
@@ -26,32 +27,43 @@
 <body>
     <header class="Header">
         <h1 class="Header__heading_cph-architects"><span class="_uppercase">cph</span> Architects</h1>
-        <i class="fas fa-bars Header__menu-icon"></i>
+        <button class="Header__menu-icon" onclick="toggleClass()">
+            <i class="fas fa-bars "></i>
+        </button>
 
-        <!-- <nav class="Header__nav Header__dropdown">
-        <ul class="Header__ul">
-            <li class="Header__li"><a class="Header__links" href="./article.html">Artikel</a></li>
-            <li class="Header__li"><a class="Header__links" href="./gallery.html">Galleri</a></li>
-            <li class="Header__li"><a class="Header__links" href="./about.html">Om os</a></li>
-        </ul>
-    </nav> -->
+
+        <nav class="Nav">
+            <ul class="Nav__ul" id="Nav__ul">
+                <li class="Nav__li"><a class="Nav__links" href="./article.html">Artikel</a></li>
+                <li class="Nav__li"><a class="Nav__links" href="./gallery.html">Galleri</a></li>
+                <li class="Nav__li"><a class="Nav__links" href="./about.html">Om os</a></li>
+                <li class="Nav__li"><a class="Nav__links" href="./index.html">Home</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="Main_no-padding">
 
         <section class="Feature-img-card">
             <article class="Article">
-                <h2 class="Article__heading Article__heading_big _content-padding _content-padding_big-screen">Lær om Københavnsk arkitektur</h2>
+                <h2 class="Article__heading Article__heading_big _content-padding _content-padding_article">Lær om Københavnsk arkitektur</h2>
 
-                <img class="Feature-img-card__img" id="article-img-float" src="./mehldahl/mehldahl/Marble_Church_front.jpg" alt="Marmor kirken">
+                <img class="Feature-img-card__img _visible-mobil" id="article-img-float" src="./mehldahl/mehldahl/Marble_Church_front.jpg" alt="Marmor kirken">
 
-                <p class="Article__paragraf _content-padding _content-padding_big-screen _margin-bottom">Arkitekter i dag arbejder med at udforme bygninger med interiører, facader og omgivelser, som er flotte og funktionelle for de mennesker, der bruger dem og ser dem. Arkitekten står bag den grundlæggende udformning af bygningens udseende
-                    og funktion. Det er arkitekten, der tegner bygningen med alt fra størrelse, form, materialer, facade, udsmykning, farver, inddelingen af rum til bygningens forhold til omgivelserne. Derfor er det også arkitektens navn, der står som
-                    skaber af bygningen. Det er ham, der har ophavsretten til ideen bag bygningens udseende og funktion.</p>
+                <p class="Article__paragraf _content-padding _content-padding_article _margin-bottom">
+                    <img class="Feature-img-card__img _visible-desktop" id="article-img-float" src="./mehldahl/mehldahl/Marble_Church_front.jpg" alt="Marmor kirken"> Arkitekter i dag arbejder med at udforme bygninger med interiører, facader og omgivelser,
+                    som er flotte og funktionelle for de mennesker, der bruger dem og ser dem. Arkitekten står bag den grundlæggende udformning af bygningens udseende og funktion. Det er arkitekten, der tegner bygningen med alt fra størrelse, form, materialer,
+                    facade, udsmykning, farver, inddelingen af rum til bygningens forhold til omgivelserne. Derfor er det også arkitektens navn, der står som skaber af bygningen. Det er ham, der har ophavsretten til ideen bag bygningens udseende og funktion.
+                    <br><br>Da man i midten af 1700-tallet anlagde Frederiksstaden, ville man bygge en monumental kirke for enden af bydelens tværakse, Amalienborgaksen. Kirken skulle markere oldenborgernes 300 år i kongehuset, og Frederik den 5. nedlagde
+                    grundstenen den 30. oktober 1749 som en del af jubilæumsfejringen. Hofbygmester Nicolai Eigtved fik til opgave at tegne kirken og lede byggeriet. Der kendes mindst 5 tegninger fra hans hånd fra årene 1750-1754. Kirkebygningskommissionen
+                    var dog ikke helt tilfreds med Eigtveds projekter, som var i en på det tidspunkt gammeldags rokokostil, og indhentede forslag fra bl.a. de franske arkitekter Ange-Jacques Gabriel og Nicolas-Henri Jardin. Der kendes også projekter fra
+                    Lauritz de Thurah og Georg David Anthon.
+
+                </p>
 
                 <figure class="Article__figure"><img class="Feature-img-card__img" src="./hansen/Rundeta╠èrn_view_2_new_version.jpg" alt="Vor frue kirke"></figure>
 
-                <p class="Article__paragraf _content-padding _content-padding_big-screen _margin-bottom">Vor Frue Kirke i København er domkirke i Københavns Stift. Det har den været siden stiftets oprettelse i 1922. Kirken er tilegnet Jomfru Maria, som især tidligere også blev kaldt Vor Frue. Der har været en kirke på stedet siden det 12.
+                <p class="Article__paragraf _content-padding _content-padding_article _margin-bottom">Vor Frue Kirke i København er domkirke i Københavns Stift. Det har den været siden stiftets oprettelse i 1922. Kirken er tilegnet Jomfru Maria, som især tidligere også blev kaldt Vor Frue. Der har været en kirke på stedet siden det 12.
                     århundrede, men kirkebygningen er brændt og genopbygget flere gange. <br> <br> Vor Frue Kirke er bygget efter den doriske orden. De seks søjler på Vor Frue Kirkes portico er alle placeret direkte på krepis, som består af et stereobat,
                     det nederste trin, og et stylobat, det øverste trin. Søjlerne har alle kannelurer, hvilket giver dem et smalt udseende. I toppen af søjlerne er et anuli, og lige ovenover et kapitæl bestående af et lidt rundet echinus samt en fladpresset
                     og meget kantet abakus. Oven på kapitælet ses et arkitrav med guttaeer og taeniaer, og ovenover det en frise bestående af metoper og mutulier. Gavlen er udsmykket med relieffer af Jesus der står og prædiker. Søjlerne på Vor Frue Kirke
@@ -79,7 +91,7 @@
         <p class="Footer__copyright">Ophavsret © 2018, alle rettigheder forbeholdes</p>
     </footer>
 
-
+    <script src="./toggle.js"></script>
 
 </body>
 

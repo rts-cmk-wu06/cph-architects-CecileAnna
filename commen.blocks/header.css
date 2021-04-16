@@ -1,0 +1,35 @@
+.Header {
+    background-color: var(--variable-dark-green-color);
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+}
+
+.Header__heading_cph-architects {
+    color: white;
+    font-size: 3.2rem;
+    padding: 0 0.5rem 0 0;
+    letter-spacing: -0.1rem;
+}
+
+.Header__menu-icon {
+    color: white;
+    border: 2px solid var(--variable-off-white-color);
+    border-radius: 10px;
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    background-color: var(--variable-dark-green-color);
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .Header__menu-icon {
+        display: none;
+    }
+    .Header {
+        padding: 0 20rem;
+    }
+}

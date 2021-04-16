@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./commen.blocks/general/general_modifiers.css">
 
     <link rel="stylesheet" href="./commen.blocks/header.css">
+    <link rel="stylesheet" href="./commen.blocks/nav.css">
     <link rel="stylesheet" href="./commen.blocks/main.css">
     <link rel="stylesheet" href="./commen.blocks/article.css">
     <link rel="stylesheet" href="./commen.blocks/horizontal-card.css">
@@ -24,24 +25,28 @@
 </head>
 
 <body>
-    <div class="Header">
+    <header class="Header">
         <h1 class="Header__heading_cph-architects"><span class="_uppercase">cph</span> Architects</h1>
-        <i class="fas fa-bars Header__menu-icon"></i>
-    </div>
-    <!-- <nav class="Header__nav Header__dropdown">
-        <ul class="Header__ul">
-            <li class="Header__li"><a class="Header__links" href="./article.html">Artikel</a></li>
-            <li class="Header__li"><a class="Header__links" href="./gallery.html">Galleri</a></li>
-            <li class="Header__li"><a class="Header__links" href="./about.html">Om os</a></li>
-        </ul>
-    </nav> -->
-    </div>
+        <button class="Header__menu-icon" onclick="toggleClass()">
+            <i class="fas fa-bars "></i>
+        </button>
+
+
+        <nav class="Nav">
+            <ul class="Nav__ul" id="Nav__ul">
+                <li class="Nav__li"><a class="Nav__links" href="./article.html">Artikel</a></li>
+                <li class="Nav__li"><a class="Nav__links" href="./gallery.html">Galleri</a></li>
+                <li class="Nav__li"><a class="Nav__links" href="./about.html">Om os</a></li>
+                <li class="Nav__li"><a class="Nav__links" href="./index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="Main Main_no-padding">
 
         <section class="Feature-img-card">
             <figure class="Article__figure"><img class="Feature-img-card__img" src="./mehldahl/mehldahl/Marble_Church_front.jpg" alt="Marmor kirken"></figure>
-            <article class="Article _content-padding Article_padding_big-screen">
+            <article class="Article _content-padding _margin-bottom-and-top _content-padding_article">
                 <h2 class="Article__heading Article__heading_big">Lær om Københavns arkitektur</h2>
                 <p class="Article__paragraf">Ordet arkitekt kommer fra oldgræsk. Det er sat sammen af de to ord ‘archi’, der betyder ‘den ældste’, og ‘tekton’, der betyder teknikker eller håndværker. Arkitekten er altså den ældste, mest erfarne og derfor den ledende af håndværkerne.
                     En chef for byggeriet.</p>
@@ -54,19 +59,19 @@
         <div class="_content-padding">
 
             <section class="Vertical-card Vertical-card_horizontal _margin-bottom">
-                <figure class="Article__figure">
+                <figure class="Article__figure Article__figure_about">
                     <img class="Vertical-card__img Vertical-card__img_horizontal" src="./hansen/domhuset.jpg" alt="Domhuset">
                 </figure>
-                <article class="Article Article_card Article_card_about">
+                <article class="Article Article_card Article_card_about _margin-right">
                     <p class="Article__paragraf Article__paragraf_card_about">Domhuset blev bygget med C.F. Hansen som arkitekt. Det blev oprindeligt bygget som et kombineret rådhus og domhus.</p>
                 </article>
             </section>
 
-            <section class="Vertical-card Vertical-card_horizontal Article_flex_row-reverse _margin-bottom">
-                <figure class="Article__figure">
+            <section class="Vertical-card Vertical-card_horizontal Vertical-card_flex_row-reverse _margin-bottom">
+                <figure class="Article__figure Article__figure_about">
                     <img class="Vertical-card__img Vertical-card__img_horizontal" src="./jacobsen/Arne-Jacobsen-Suite-room-606.jpg" alt="Arne Jacobsen Suite room 606">
                 </figure>
-                <article class="Article Article_card Article_card_about">
+                <article class="Article Article_card Article_card_about _margin-left">
                     <p class="Article__paragraf Article__paragraf_card_about">SAS Royal Hotel stod færdigt i 1960, og Arne Jacobsen tegnede alt - fra facaden til bestikket i restauranten.</p>
                 </article>
             </section>
@@ -75,7 +80,7 @@
                 <figure class="Article__figure">
                     <img class="Vertical-card__img" src="./nyrop/nyrop/CopenhagenCityHallFront.jpg" alt="Københavns rådhus">
                 </figure>
-                <article class="Article Article_card Article_card_about_vertical">
+                <article class="Article Article_card Article_card_about_vertical" style="display:flex; justify-content: center; align-items: center;">
                     <p class="Article__paragraf Article__paragraf_card_about"> Københavns rådhus blev opført efter Martin Nyrops design, der var inspireret af Rådhuset i Siena, Italien.</p>
                 </article>
             </section>
@@ -101,7 +106,7 @@
         <p class="Footer__copyright">Ophavsret © 2018, alle rettigheder forbeholdes</p>
     </footer>
 
-
+    <script src="./toggle.js"></script>
 
 </body>
 

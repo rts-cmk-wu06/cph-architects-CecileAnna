@@ -1,0 +1,35 @@
+.Vertical-card {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--variable-light-green-color, teal);
+    margin: 1.8rem 0;
+}
+
+.Vertical-card__img {
+    width: 100%;
+    object-fit: cover;
+    height: 65vh;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .Vertical-card {
+        height: 950px;
+    }
+    .Vertical-card__img {
+        width: 100%;
+        object-fit: cover;
+        height: 670px;
+    }
+    /* modifiers */
+    .Vertical-card_horizontal {
+        flex-flow: row nowrap;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .Vertical-card_flex_row-reverse {
+        flex-flow: row-reverse nowrap;
+    }
+    .Vertical-card__img_horizontal {
+        width: 100%;
+    }
+}
